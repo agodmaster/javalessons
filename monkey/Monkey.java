@@ -1,4 +1,5 @@
 public class Monkey{
+	//フィールド変数
 	public String name;
 	public int age;
 	public Monkey(String name,int age){
