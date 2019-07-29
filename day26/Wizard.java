@@ -4,13 +4,13 @@ public class Wizard{
 	private String name; private Wand wand;
 	public Wizard(){
 	}
-	public void heal(Hero h){
+	public void Heal(Hero h){
 		int basePoint=10;
 		int recovPoint=(int)(basePoint*this.getWand().getPower());
 		h.setHp(h.getHp()+recovPoint);
 		Common.print(h.getName()+"のHPを"+recovPoint+"回復した!");
 	}
-	public int gerHp(){return this.hp;}
+	public int getHp(){return this.hp;}
 	public void setHp(int hp){
 		if(hp<0){this.hp=0;}else{this.hp=hp;}
 	}
