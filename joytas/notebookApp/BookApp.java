@@ -3,10 +3,8 @@ import java.util.*;
 public class BookApp{
 	public static void main(String[] args){
 		Scanner sc=new Scanner(System.in);
-		Common.print("本のページ数を入力して下さい >","");
-		int page=sc.nextInt();
-		Common.print("本の価格を入力して下さい >","");
-		int price=sc.nextInt();
+		int page=Common.input("本のページ数を入力して下さい >");
+		int price=Common.input("本の価格を入力して下さい >");
 		Book book=new Book(page,price);
 		Common.print("ノートのページ数を入力して下さい >","");
 		page=sc.nextInt();

@@ -1,6 +1,7 @@
 import my.util.*;
 public class SuperHero extends Hero2{
 	private boolean flying;
+	int n;
 	public void fly(){
 		this.flying=true;
 		Common.print("飛び上がった！");
@@ -11,5 +12,6 @@ public class SuperHero extends Hero2{
 	}
 	public void run(){
 		Common.print("撤退した！");
+		n=sc.nextInt();
 	}
 }
