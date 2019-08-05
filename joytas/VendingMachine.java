@@ -18,7 +18,7 @@ public class VendingMachine{
 	}
 	public int purchase(){
 		if(this.money<100){
-			Common.print("等入金額が足りません");
+			Common.print("投入金額が足りません");
 			return -1;
 		}
 		if(this.num<1){

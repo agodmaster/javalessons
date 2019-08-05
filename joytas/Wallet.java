@@ -13,7 +13,7 @@ public class Wallet{
 		System.out.printf("財布から%d円取り出しました。%n",m);
 		return m;
 	}
-	public void desplay(){
+	public void display(){
 		System.out.printf("現在の財布の中身：%d円%n",this.money);
 	}
 }
