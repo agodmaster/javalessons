@@ -20,7 +20,7 @@ public class Lesson010{
 		}
 		switch(select){
 		case 1:
-			for(int i = max ; i > min ; i--){
+			for(int i = max ; i >= min ; i--){
 				if(i %2 == 0){
 					sum+=i;
 				}
@@ -29,11 +29,11 @@ public class Lesson010{
 			break;
 		case 2:
 			for(int i = max ; i > min ; i--){
-				if(i %1 == 0){
+				if(i %2 != 0){
 					sum+=i;
 				}
 			}
-			System.out.print(min+"から"+max+"までの偶数の合計は"+sum+"です。 ");
+			System.out.print(min+"から"+max+"までの奇数の合計は"+sum+"です。 ");
 			break;
 		default:
 			System.out.print("アプリを終了します");
